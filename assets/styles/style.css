@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: blue;
+  height: 576px;
+}
+
+nav {
+  background-color: rgb(238, 238, 238);
+  opacity: 0.5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  margin: 0;
+}
+nav ul {
+  display: flex;
+list-style: none;
+width: 40%;
+justify-content: space-between;
+}
+
+
+
+body.dark {
+  background-color: dimgray;
+}
+
+body{
+font-family: font-family: 'Poppins', sans-serif;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+/* button label */
+.label {
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  height: 26px; /* ini tinggi */
+  width: 50px; /*ini panjang */
+}
+
+.ball {
+  background-color: #bdb8b8;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+/* icon */
+/* .uil-brightness {
+    color: #d0d8d8;
+  }
+  .uil-moon {
+    color: #d0d8d8;
+  } */
