@@ -1,39 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200;300;400;500;600&family=Roboto+Mono:wght@300&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-header {
-  background-color: blue;
-  height: 576px;
+:root {
+  --first-color: #f8f7f1;
+  --second-color: #24343c;
+  --nav-color: #fff;
+  --label-color: #222222;
+  --font-gedebgt: "Bebas Neue", cursive;
+  --font-gede: "Poppins", sans-serif;
+  --font-kecil: "Roboto Mono", monospace;
+  --warna-warni: #00acc1;
+  --font-big: 5em;
+}
+.dark {
+  --first-color: #363636;
+  --second-color: #f8f7f1;
+  --nav-color: #424242;
+  --label-color: #00acc1;
 }
 
-nav {
-  background-color: rgb(238, 238, 238);
-  opacity: 0.5;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 70px;
-  margin: 0;
-}
-nav ul {
-  display: flex;
-list-style: none;
-width: 40%;
-justify-content: space-between;
-}
-
-
-
-body.dark {
-  background-color: dimgray;
-}
-
-body{
-font-family: font-family: 'Poppins', sans-serif;
-}
+/* ---------checkbox---------- */
 
 .checkbox {
   opacity: 0;
@@ -42,7 +31,7 @@ font-family: font-family: 'Poppins', sans-serif;
 
 /* button label */
 .label {
-  background-color: #222222;
+  background-color: var(--label-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,7 +43,7 @@ font-family: font-family: 'Poppins', sans-serif;
 }
 
 .ball {
-  background-color: #bdb8b8;
+  background-color: var(--first-color);
   border-radius: 50%;
   position: absolute;
   top: 2px;
@@ -67,11 +56,138 @@ font-family: font-family: 'Poppins', sans-serif;
 .checkbox:checked + .label .ball {
   transform: translateX(24px);
 }
+/* ----------------button--------------- */
+.button {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: var(--warna-warni);
+  color: var(--nav-color);
+  padding: 0.75rem 2.5rem;
+  font-weight: var(--font-semi);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  text-decoration: none;
+}
 
-/* icon */
-/* .uil-brightness {
-    color: #d0d8d8;
+.button:hover {
+  box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}
+/* ---------------- */
+
+body {
+  background-color: var(--first-color);
+  color: var(--second-color);
+  font-family: var(--font-gede);
+  font-weight: 300;
+}
+nav {
+  font-family: var(--font-gede);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  background-color: var(--nav-color);
+  position: fixed;
+  z-index: 0;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+nav .logo a {
+  font-family: var(--font-gede);
+  font-weight: 600;
+  color: var(--second-color);
+  letter-spacing: -2px;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-between;
+}
+nav a {
+  font-family: var(--font-kecil);
+  color: var(--second-color);
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  text-align: left;
+}
+footer {
+  text-align: center;
+}
+
+.intro {
+  padding: 10em 10em;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(/assets/svg/sun.svg);
+}
+.intro__hi {
+  font-family: var(--font-kecil);
+}
+.intro h1 {
+  margin-top: 2rem;
+  font-family: var(--font-gede);
+  font-size: var(--font-big);
+  letter-spacing: -3px;
+}
+.intro h2 {
+  margin-top: -10px;
+  font-weight: 300;
+  font-size: xx-large;
+}
+.intro__tagline {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* word-spacing: 2px; */
+}
+
+@media screen and (max-width: 1312px) {
+  nav ul {
+    width: 50%;
   }
-  .uil-moon {
-    color: #d0d8d8;
-  } */
+}
+@media screen and (max-width: 992px) {
+  .intro h1 {
+    font-size: 60px;
+    /* letter-spacing: -3px; */
+  }
+  .intro {
+    text-align: center;
+  }
+  nav ul {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  nav ul {
+    width: 60%;
+  }
+  .intro {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 9.5rem;
+    padding-bottom: 5rem;
+  }
+  .intro h1 {
+    font-size: 3.25rem;
+    letter-spacing: -3px;
+  }
+  .intro h2 {
+    margin-top: 0.25rem;
+    font-weight: 300;
+    font-size: 25px;
+  }
+  .intro__tagline {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    /* word-spacing: 2px; */
+  }
+}
