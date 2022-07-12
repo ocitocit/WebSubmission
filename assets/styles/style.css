@@ -7,7 +7,8 @@
 :root {
   --first-color: #f8f7f1;
   --second-color: #24343c;
-  --nav-color: #fff;
+  --nav-color: rgba(255, 255, 255, 0.4);
+  /*  #fff*/
   --label-color: #222222;
   --font-gedebgt: "Bebas Neue", cursive;
   --font-gede: "Poppins", sans-serif;
@@ -19,7 +20,8 @@
 .dark {
   --first-color: #363636;
   --second-color: #f8f7f1;
-  --nav-color: #424242;
+  /* --nav-color: #424242; */
+  --nav-color: rgba(43, 43, 43, 0.4);
   --label-color: #00acc1;
 }
 
@@ -91,6 +93,7 @@ nav {
   background-color: var(--nav-color);
   position: fixed;
   z-index: 0;
+  backdrop-filter: blur(3px);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -120,11 +123,14 @@ footer {
 .content {
   display: flex;
   flex-direction: column;
-  padding: 10em 10em;
+  padding: 0em 10em;
+  width: 100%;
 }
 
 /* ----------------------- */
-
+.intro {
+  padding-top: 150px;
+}
 .intro__hi {
   font-family: var(--font-kecil);
 }
@@ -146,12 +152,18 @@ footer {
 }
 /* --------------------------------- */
 .skills {
-  /* padding-top: 80px; */
+  padding-top: 80px;
   text-align: center;
 }
 .skills h1 {
   font-family: var(--font-gede);
   font-size: var(--font-mid);
+}
+.works {
+  padding-top: 80px;
+}
+.contact {
+  padding-top: 80px;
 }
 /* -------------------------------------- */
 @media screen and (max-width: 1312px) {
@@ -179,7 +191,7 @@ footer {
   .content {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-top: 9.5rem;
+    /* padding-top: 9.5rem; */
     padding-bottom: 5rem;
   }
 
