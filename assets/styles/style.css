@@ -14,6 +14,7 @@
   --font-kecil: "Roboto Mono", monospace;
   --warna-warni: #00acc1;
   --font-big: 5em;
+  --font-mid: 2.5em;
 }
 .dark {
   --first-color: #363636;
@@ -112,22 +113,18 @@ nav a {
   text-decoration: none;
 }
 
-main {
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  text-align: left;
-}
 footer {
   text-align: center;
 }
-
-.intro {
-  padding: 10em 10em;
+/* ================================== */
+.content {
   display: flex;
-  flex-wrap: wrap;
-  background-image: url(/assets/svg/sun.svg);
+  flex-direction: column;
+  padding: 10em 10em;
 }
+
+/* ----------------------- */
+
 .intro__hi {
   font-family: var(--font-kecil);
 }
@@ -147,7 +144,16 @@ footer {
   margin-bottom: 5px;
   /* word-spacing: 2px; */
 }
-
+/* --------------------------------- */
+.skills {
+  /* padding-top: 80px; */
+  text-align: center;
+}
+.skills h1 {
+  font-family: var(--font-gede);
+  font-size: var(--font-mid);
+}
+/* -------------------------------------- */
 @media screen and (max-width: 1312px) {
   nav ul {
     width: 50%;
@@ -170,12 +176,13 @@ footer {
   nav ul {
     width: 60%;
   }
-  .intro {
+  .content {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 9.5rem;
     padding-bottom: 5rem;
   }
+
   .intro h1 {
     font-size: 3.25rem;
     letter-spacing: -3px;
@@ -188,6 +195,5 @@ footer {
   .intro__tagline {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
-    /* word-spacing: 2px; */
   }
 }
