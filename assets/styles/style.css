@@ -8,21 +8,23 @@
   --first-color: #f8f7f1;
   --second-color: #24343c;
   --nav-color: rgba(255, 255, 255, 0.4);
-  /*  #fff*/
+  /* --nav-color: #fff; */
   --label-color: #222222;
   --font-gedebgt: "Bebas Neue", cursive;
   --font-gede: "Poppins", sans-serif;
   --font-kecil: "Roboto Mono", monospace;
-  --warna-warni: #00acc1;
+  --warna-warni: #fda251;
   --font-big: 5em;
   --font-mid: 2.5em;
+  --sadow-box: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 .dark {
   --first-color: #363636;
   --second-color: #f8f7f1;
   /* --nav-color: #424242; */
   --nav-color: rgba(43, 43, 43, 0.4);
-  --label-color: #00acc1;
+  --label-color: #fda251;
+  --sadow-box: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ---------checkbox---------- */
@@ -64,7 +66,7 @@
   margin-top: 20px;
   display: inline-block;
   background-color: var(--warna-warni);
-  color: var(--nav-color);
+  color: var(--first-color);
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
@@ -94,7 +96,7 @@ nav {
   position: fixed;
   z-index: 0;
   backdrop-filter: blur(3px);
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  box-shadow: var(--sadow-box);
 }
 
 nav .logo a {
