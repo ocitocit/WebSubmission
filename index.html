@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PortfolioSubmission</title>
     <link rel="stylesheet" href="/assets/styles/style.css" />
+    <!-- ======== icon (https://iconscout.com/) ======== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- ========                              ======== -->
   </head>
   <body>
     <!-- header isi nav -->
@@ -23,20 +29,21 @@
             <input type="checkbox" class="checkbox" id="checkbox" />
 
             <label for="checkbox" class="label">
-              <!-- <i class="uil uil-brightness"></i> -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <i class="uil uil-brightness"></i>
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path
                   fill="#D0D8D8"
                   d="M5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12ZM5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM12,5a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5Zm5.66,2.34a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34Zm-12-.29a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5ZM12,19a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19Z"
                 />
-              </svg>
+              </svg> -->
               <!-- <i class="uil uil-moon"></i> -->
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path
                   fill="#D0D8D8"
                   d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
                 />
-              </svg>
+              </svg> -->
+              <i class="uil uil-moon"></i>
               <div class="ball"></div>
             </label>
           </div>
@@ -63,17 +70,147 @@
           </div>
         </artice>
         <!-- section skills -->
-        <article class="skills" id="skills">
-          <h1>Skills</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure
-            ab fugit quo repellat et totam, porro magni obcaecati voluptates
-            quidem, ipsum animi mollitia beatae accusantium dolorem perspiciatis
-            sit cum.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Accusamus consequuntur illo vitae nihil distinctio est, delectus
-            nisi cum error ducimus libero, tempore, excepturi nostrum. Eveniet
-            tempora iure neque id labore? ipsum
-          </p>
+        <article class="skills sect" id="skills">
+          <h2 class="sect__title">Skills</h2>
+          <span class="sect__sub">My thecnical skills</span>
+          <div class="skills__container container grid">
+            <!-- ===== skill 1 ===== -->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="uil uil-html5 skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">Frontend Dev</h1>
+                  <span class="skills__sub">Just started learning</span>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__html"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills__number">55%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__css"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JavaScript</h3>
+                    <span class="skills__number">20%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__js"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__number">5%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__react"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ===== skill 2 ===== -->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-image skills__icon"></i>
+                <div>
+                  <h1 class="skill__title">Design</h1>
+                  <span class="skills__sub">2 years experienced</span>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Photoshop</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__ps"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Illustrator</h3>
+                    <span class="skills__number">55%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__ai"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Figma</h3>
+                    <span class="skills__number">20%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__figma"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ===== skill 3 ===== -->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-suitcase-alt skills__icon"></i>
+                <div>
+                  <h1 class="skill__title">Office</h1>
+                  <span class="skills__sub">5 years experienced</span>
+                </div>
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Ms Word</h3>
+                    <span class="skills__number">90%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__word"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Ms Excel</h3>
+                    <span class="skills__number">80%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__excel"></span>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Ms Power Point</h3>
+                    <span class="skills__number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__powerpoint"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </article>
         <!-- section works -->
         <article class="works" id="works">
