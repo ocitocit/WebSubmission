@@ -27,7 +27,8 @@
   --first-color: #292929;
   --second-color: #f8f7f1;
   /* --nav-color: #424242; */
-  --nav-color: rgba(43, 43, 43, 0.4);
+  --burem-color: #d8d8d8b0;
+  --nav-color: rgba(65, 63, 63, 0.4);
   --label-color: #fda251;
   --sadow-box: 0 1px 4px rgba(20, 20, 20, 0.3);
 }
@@ -40,7 +41,7 @@ nav .uil-moon {
 }
 /* ====== tambahan ======= */
 .container {
-  max-width: 768px;
+  /* max-width: 768px; */
   margin-left: 1.5em;
   margin-right: 1.5em;
 }
@@ -173,13 +174,13 @@ footer {
 .intro__hi {
   font-family: var(--font-kecil);
 }
-.intro h1 {
+.intro__nama {
   margin-top: 2rem;
   font-family: var(--font-gede);
   font-size: var(--font-big);
   letter-spacing: -3px;
 }
-.intro h2 {
+.intro__sub {
   margin-top: -10px;
   font-weight: 300;
   font-size: xx-large;
@@ -196,6 +197,7 @@ footer {
 
 .skills__container {
   row-gap: 0;
+  grid-template-columns: auto auto auto;
 }
 
 .skills__header {
@@ -224,7 +226,7 @@ footer {
 }
 .skills__arrow {
   margin-left: auto;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 .skills__list {
   row-gap: 1.5em;
@@ -302,6 +304,7 @@ footer {
 .skills__open .skills__arrow {
   transform: rotate(-180deg);
 }
+
 /* -------------------------------------- */
 @media screen and (max-width: 1312px) {
   nav ul {
@@ -309,15 +312,21 @@ footer {
   }
 }
 @media screen and (max-width: 992px) {
-  .intro h1 {
+  nav ul {
+    width: 60%;
+  }
+  .content {
+    padding: 0em 5em;
+  }
+  .intro__nama {
     font-size: 60px;
     /* letter-spacing: -3px; */
   }
   .intro {
     text-align: center;
   }
-  nav ul {
-    width: 60%;
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 668px) {
@@ -330,11 +339,11 @@ footer {
     /* padding-top: 9.5rem; */
     padding-bottom: 5rem;
   }
-  .intro h1 {
+  .intro__nama {
     font-size: 3.25rem;
     letter-spacing: -3px;
   }
-  .intro h2 {
+  .intro__sub {
     margin-top: 0.25rem;
     font-weight: 300;
     font-size: 25px;
@@ -342,5 +351,29 @@ footer {
   .intro__tagline {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
+  }
+  .skills__container {
+    grid-template-columns: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  /* ======= */
+  nav {
+    padding: 16px 23px;
+  }
+  .intro__nama {
+    font-size: 2.5em;
+  }
+  .intro__sub {
+    font-size: 20px;
+  }
+
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .skills__title {
+    font-size: 0.938em;
   }
 }
