@@ -532,6 +532,11 @@ input:focus {
     justify-self: center;
     text-align: center;
   }
+  .form__content, 
+  .form__box,
+  .messages__box{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 350px) {
   /* ======= */
