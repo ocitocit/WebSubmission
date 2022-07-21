@@ -447,6 +447,9 @@ footer {
   left: 12px;
   transition: 0.3s;
 }
+.form__content {
+  zoom: 1.1;
+}
 input,
 select,
 textarea {
@@ -494,6 +497,9 @@ input:focus {
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .form__content {
+    zoom: unset;
+  }
 }
 @media screen and (max-width: 668px) {
   nav li a {
@@ -537,6 +543,7 @@ input:focus {
   .messages__box{
     width: 100%;
   }
+  
 }
 @media screen and (max-width: 350px) {
   /* ======= */
@@ -563,5 +570,8 @@ input:focus {
 
   .skills__title {
     font-size: 0.938em;
+  }
+  .form{
+    margin:0 0;
   }
 }
