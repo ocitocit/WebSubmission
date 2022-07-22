@@ -11,6 +11,14 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+    <style>
+      :root {
+        --port: src= "assets/img/port-w.png";
+      }
+      .dark {
+        --port: src= "assets/img/port-w.png";
+      }
+    </style>
     <!-- ========                              ======== -->
   </head>
   <body>
@@ -209,31 +217,16 @@
         <article class="works sect" id="works">
           <h1 class="sect__title">Works</h1>
           <span class="sect__sub">Selected from something that I made</span>
-          <div class="works__content grid">
-            <div class="works__one works__img">
-              <img src="assets/img/mockup-2.png" alt="" />
+          <div class="works__content">
+            <div class="work_box">
+              <div class="image__port">
+                <img src="assets/img/kalkulator-noshadow.png" alt="" />
+              </div>
             </div>
-            <div class="works1__text">
-              <span class="intro__sub">Web Calculator</span>
-              <p>
-                I've made this while learning JavaScipt,<br />
-                learning JavaScript its made me bit confused on first time,but
-                things goes well after a while.
-              </p>
-            </div>
-
-            <div class="works__two works__img">
-              <img src="assets/img/mockup-1.png" alt="" />
-            </div>
-            <div class="works2__text">
-              <span class="intro__sub">Portfolio Web</span>
-              <p>
-                It took about a month to made this portfolio,<br />
-                I've been brainstorming about layout and animation,when I got
-                new idea I'll change the old ones,and its like starover again in
-                that time, I think I can make better than this one,maybe later
-                I'll made one better.
-              </p>
+            <div class="work_box">
+              <div class="image__port">
+                <img src="assets/img/port-w-noshadow.png" alt="" />
+              </div>
             </div>
           </div>
         </article>
@@ -280,14 +273,16 @@
               </div>
               <div class="from__button">
                 <!-- <button class="button__submit" type="submit">Submit</button> -->
-                <input type="submit" value="Submit" class="button__submit">
+                <input type="submit" value="Submit" class="button__submit" />
               </div>
             </form>
           </div>
         </article>
       </div>
-      <!-- ============== sidebar =================== -->
-      <aside></aside>
+      <!-- ============== aside=================== -->
+      <aside>
+        <div class="con__aside"></div>
+      </aside>
     </main>
     <!-- ============== footer  =================== -->
     <footer>
