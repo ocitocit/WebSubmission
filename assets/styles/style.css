@@ -20,24 +20,14 @@
   --font-mid: 40px;
   --font-smal: 14px;
   --sadow-box: 0 1px 4px rgba(146, 161, 176, 0.15);
-  --color-icon: #f8f7f1;
 }
 .dark {
-  --port: assets/img/port-w.png;
   --first-color: #292929;
   --second-color: #f8f7f1;
-  /* --nav-color: #424242; */
   --burem-color: #d8d8d8b0;
   --nav-color: rgba(65, 63, 63, 0.4);
   --label-color: #fda251;
   --sadow-box: 0 1px 4px rgba(20, 20, 20, 0.3);
-}
-/* ===icon color=== */
-nav .uil-brightness {
-  color: var(--color-icon);
-}
-nav .uil-moon {
-  color: var(--color-icon);
 }
 /* ----reusable css----- */
 .padding__top {
@@ -218,12 +208,10 @@ footer {
 
 .skills__icon,
 .skills__arrow {
-  font-size: 32px;
-  color: var(--warna-warni);
-}
-
-.skills__icon {
   margin-right: 12px;
+  height: 40px;
+  /* font-size: 32px;
+  color: var(--warna-warni); */
 }
 .skills__data {
   margin-bottom: 15px;
@@ -349,7 +337,7 @@ footer {
 }
 .form__input,
 .form__label,
-/* .button__submit, */
+.button__submit,
 .msg__input,
 .button__resume {
   border: 0;
@@ -406,6 +394,7 @@ footer {
   text-decoration: none;
   font-size: 16px;
   position: relative;
+  cursor: pointer;
 }
 .button__submit:hover {
   transform: translate(-6px, -6px);
@@ -461,8 +450,6 @@ aside {
   align-items: center;
   justify-content: center;
 }
-.shadow__bio {
-}
 .biodata {
   width: 480px;
   height: 420px;
@@ -487,9 +474,12 @@ aside {
   justify-content: space-between;
   align-items: center;
   color: #292929;
-  padding: 8px 16px;
+  padding: 8px 10px;
   border-bottom: 3px solid #292929;
   background-color: var(--warna-warni);
+}
+.cross__icon {
+  height: 40px;
 }
 .biodata__content {
   align-items: center;
@@ -548,7 +538,7 @@ footer {
     zoom: unset;
   }
 }
-@media screen and (max-width: 803px) {
+@media screen and (max-width: 887px) {
   .skills__container {
     padding: 0 60px;
     justify-content: space-between;
@@ -574,6 +564,9 @@ footer {
   .intro__tagline {
     margin: 0 20px 60px 20px;
   }
+  .skills__container {
+    justify-content: space-evenly;
+  }
 
   .form__content,
   .form__box,
@@ -581,11 +574,7 @@ footer {
     width: 100%;
   }
 }
-@media screen and (max-width: 595px) {
-  .skills__container {
-    justify-content: space-evenly;
-  }
-}
+
 @media screen and (max-width: 350px) {
   /* ======= */
   nav {
