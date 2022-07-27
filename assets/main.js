@@ -23,3 +23,4 @@ function toggleSkills() {
 skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
+// =================popup biodata=========================

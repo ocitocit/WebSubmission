@@ -11,14 +11,6 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-    <style>
-      :root {
-        --port: src= "assets/img/port-w.png";
-      }
-      .dark {
-        --port: src= "assets/img/port-w.png";
-      }
-    </style>
     <!-- ========                              ======== -->
   </head>
   <body>
@@ -60,32 +52,29 @@
               startups, and individuals who want to get more online visibility.
             </p>
 
-            <div class="button">
-              <a
-                href="/assets/pdf/cv.pdf"
-                target="_blank"
-                class="button__resume"
-                >Download Resume</a
-              >
-            </div>
+            <span class="button__download">
+              <span class="button__resume">
+                <a href="/assets/pdf/cv.pdf" target="_blank">Download Resume</a>
+              </span>
+            </span>
           </div>
         </artice>
         <!-- section skills -->
-        <article class="skills sect" id="skills">
-          <h2 class="sect__title">Skills</h2>
-          <span class="sect__sub">My thecnical skills</span>
-          <div class="skills__container container grid">
+        <article class="skills padding__top" id="skills">
+          <h2 class="title__section">Skills</h2>
+          <span class="subtitle">My thecnical skills</span>
+          <div class="skills__container">
             <!-- ===== skill 1 ===== -->
             <div class="skills__content skills__open">
               <div class="skills__header">
                 <i class="uil uil-html5 skills__icon"></i>
                 <div>
                   <h1 class="skills__title">Frontend Dev</h1>
-                  <span class="skills__sub">Just started learning</span>
+                  <span class="skills__sub">1 years experienced</span>
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
               </div>
-              <div class="skills__list grid">
+              <div class="skills__list">
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">HTML</h3>
@@ -137,7 +126,7 @@
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
               </div>
-              <div class="skills__list grid">
+              <div class="skills__list">
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">Photoshop</h3>
@@ -179,7 +168,7 @@
                 </div>
                 <i class="uil uil-angle-down skills__arrow"></i>
               </div>
-              <div class="skills__list grid">
+              <div class="skills__list">
                 <div class="skills__data">
                   <div class="skills__titles">
                     <h3 class="skills__name">Ms Word</h3>
@@ -214,9 +203,9 @@
           </div>
         </article>
         <!-- section works -->
-        <article class="works sect" id="works">
-          <h1 class="sect__title">Works</h1>
-          <span class="sect__sub">Selected from something that I made</span>
+        <article class="works padding__top" id="works">
+          <h1 class="title__section">Works</h1>
+          <span class="subtitle">Selected from something that I made</span>
           <div class="works__content">
             <div class="work_box">
               <div class="image__port">
@@ -232,9 +221,9 @@
         </article>
         <!-- section contact -->
         <article class="contact" id="contact">
-          <div class="form sect">
+          <div class="form padding__top">
             <form class="form__content">
-              <h1 class="sect__title">Get In Touch</h1>
+              <h1 class="title__section">Get In Touch</h1>
               <div class="form__box">
                 <input
                   type="text"
@@ -271,22 +260,37 @@
                 <label for="" class="form__label">YOUR MESSAGES</label>
                 <div class="form__messhadow"></div>
               </div>
-              <div class="from__button">
-                <!-- <button class="button__submit" type="submit">Submit</button> -->
-                <input type="submit" value="Submit" class="button__submit" />
+              <div class="submit__shadow">
+                <button class="button__submit" type="submit">Submit</button>
               </div>
             </form>
           </div>
         </article>
       </div>
       <!-- ============== aside=================== -->
-      <aside>
-        <div class="con__aside sect"></div>
+      <aside class="padding__top">
+        <div class="biodata">
+          <div class="box__biodata">
+            <div class="boxupper">
+              <h2 class="bio__title">Biodata</h2>
+              <i class="uil uil-times"></i>
+            </div>
+            <div class="biodata__content">
+              <div class="biodata__img">
+                <img src="assets/img/profile.png" alt="ocit" />
+              </div>
+              <span class="text__bio">My name is Abdul Rosyid</span>
+              <span class="text__bio">I'am from Bekasi, Indonesia</span>
+              <span class="text__bio"> ocritocrit@gmail.com </span>
+            </div>
+          </div>
+        </div>
       </aside>
     </main>
     <!-- ============== footer  =================== -->
     <footer>
       <p>Portfolio Submisson &copy; 2022, by ocit</p>
+      <!-- icon svg are from iconsout https://iconscout.com/ feel free to use them -->
     </footer>
     <script src="assets/main.js"></script>
   </body>
